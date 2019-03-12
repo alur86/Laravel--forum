@@ -22,7 +22,9 @@ protected $fillable = [
 
     return $this->hasMany(User::class);
 
-    }
+  }
+
+
 
   public function post() {
 

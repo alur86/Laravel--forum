@@ -52,6 +52,15 @@ public function posts() {
 }
 
 
+public function categories() {
+    
+  return $this->hasMany(Category::class);
+
+}
+
+
+
+
 public static function displayUser() {
 
         return $this->name;
