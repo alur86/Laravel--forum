@@ -16,10 +16,10 @@ class CreateRevisionsTable extends Migration
         Schema::create('revisions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('post_id')->unsigned()->nullable();
-           // $table->foreign('post_id')->references('id')->on('posts');
+            $table->foreign('post_id')->references('id')->on('posts');
             $table->text('message');
             $table->boolean('status')->default(false);
-           // $table->softDeletes();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
