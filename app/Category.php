@@ -33,12 +33,6 @@ protected $fillable = [
   }
 
 
- 
-  public function comments() {
-
-   return $this->hasMany(Comment::class);
-
-  }
 
 
    public static function getTitle() {
